@@ -1,0 +1,139 @@
+.hidden {
+    display: none;
+}
+
+* {
+    color: rgb(48, 47, 47);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.background{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    max-width: 100%;
+    overflow:hidden;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#window {
+    display: flex;
+}
+
+#picture_window {
+    display: flex;
+    flex: 1.2 0 0;
+    justify-content: center;
+    align-items: center;    
+}
+
+.showImg {
+    margin-left: 3rem;
+}
+
+.image {
+    max-width: 450px;
+    max-height: 300px;
+    border: 25px solid #f0eeed;    
+    box-shadow: 0 15px 15px rgba(1, 1, 2, 0.41), 0 15px 10px rgba(1, 1, 2, 0.41);   
+    margin-top: 3rem; 
+    animation : fadeIN 0.5s linear;
+}
+
+#greeting_window {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    margin-top: 6rem;
+    margin-right: 4rem;
+    padding: 1rem;
+    height: 650px;
+}
+
+#greeting{
+    font-size: 4rem;
+    font-weight: 900;
+    flex: 1 0 0;   
+    text-shadow: 1px 1px 2px gray;
+    font-family: 'Poiret One', cursive;
+}
+
+.weatherClock_quote_container{
+    flex: 1.8 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherClock {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+}
+
+#weatherCast {
+    flex: 1 0 0;
+    font-size: 1.5rem;
+    font-family: 'Poiret One', cursive;
+}
+
+#clock {
+    flex: 1.8 0 0;
+    font-size: 3rem;
+    text-align: start;
+    font-family: 'Poiret One', cursive;
+}
+
+#quote {
+    flex: 1 0 0;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Homemade Apple', cursive;
+    overflow: auto;
+}
+
+p {
+    margin-top : 0;
+    margin-bottom : 0;
+    max-height: 160px;
+    overflow: auto;
+}
+
+p::-webkit-scrollbar {
+    display: none;
+    border: none;
+}
+
+.todo_list_container{
+    display: flex;
+    flex-direction: row;
+    flex: 3 0 0;
+}
+
+#todo-list{
+    padding-top: 4rem;
+    flex: 1 0 0;
+    font-family: 'Homemade Apple', cursive;
+}
+
+#todo-form{
+    padding-bottom: 1rem;
+}
+
+input {
+    background: transparent;
+    border : none;
+    border-bottom: 2px solid gray;
+}
+
+button {
+    background: transparent;
+    border : none;
+}
+
+#complete-list {
+    padding-top: 6rem;
+    flex: 1 0 0;
+    font-family: 'Homemade Apple', cursive;
+}
