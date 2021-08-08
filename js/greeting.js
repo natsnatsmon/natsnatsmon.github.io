@@ -7,7 +7,7 @@ const USERNAME_KEY = "username";
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 
 function paintGreetings(userName) {
-    greeting.innerText = `Hello ${userName}`;
+    greeting.innerText = `Hello, ${userName}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 function handleLoginBtnClick(tomato) {
